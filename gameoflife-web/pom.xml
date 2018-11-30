@@ -12,7 +12,7 @@
     <name>gameoflife-web</name>
 
     <properties>
-        <jetty.port>9090</jetty.port>
+        <jetty.port>8080</jetty.port>
         <jetty.stop.port>9999</jetty.stop.port>
     </properties>
 
@@ -33,7 +33,7 @@
                   <scanIntervalSeconds>10</scanIntervalSeconds>
                   <httpConnector>
                       <port>${jetty.port}</port>
-                      <idleTimeout>60000</idleTimeout>
+                      <idleTimeout>60</idleTimeout>
                   </httpConnector>
                   <stopKey>foo</stopKey>
                   <stopPort>${jetty.stop.port}</stopPort>
