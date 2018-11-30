@@ -12,7 +12,7 @@
     <name>gameoflife-web</name>
 
     <properties>
-        <jetty.port>8080</jetty.port>
+        <jetty.port>9090</jetty.port>
         <jetty.stop.port>9999</jetty.stop.port>
     </properties>
 
@@ -30,7 +30,7 @@
               <artifactId>jetty-maven-plugin</artifactId>
               <version>9.3.0.v20150612</version>
               <configuration>
-                  <scanIntervalSeconds>10</scanIntervalSeconds>
+                  <scanIntervalSeconds>1</scanIntervalSeconds>
                   <httpConnector>
                       <port>${jetty.port}</port>
                       <idleTimeout>60</idleTimeout>
