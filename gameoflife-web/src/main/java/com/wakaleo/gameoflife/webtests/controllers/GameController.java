@@ -29,8 +29,8 @@ public class GameController {
     public ModelAndView newGame() {
         //ModelAndView mav = new ModelAndView("game/edit");
         //Universe universe = new Universe();
-        //mav.addObject("universe", universe);
-        //thinkABit(250); // Pause for random time
+        mav.addObject("universe", universe);
+        thinkABit(250); // Pause for random time
         return mav;
     }
 
@@ -98,9 +98,9 @@ public class GameController {
 	// Display the game-of-life grid page
     private ModelAndView showGridScreen(final Universe universe) {
         //ModelAndView mav = new ModelAndView("game/show");
-        //mav.addObject("universe", universe);
-        //mav.addObject("rows", universe.getCells().length);
-        //mav.addObject("columns", universe.getCells()[0].length);
+        mav.addObject("universe", universe);
+        mav.addObject("rows", universe.getCells().length);
+        mav.addObject("columns", universe.getCells()[0].length);
         return mav;
     }
 
