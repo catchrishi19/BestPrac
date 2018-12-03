@@ -1,4 +1,5 @@
- package com.wakaleo.gameoflife.webtests.controllers;
+
+package com.wakaleo.gameoflife.webtests.controllers;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
@@ -8,6 +9,7 @@ import static org.mockito.Mockito.mock;
 
 import javax.servlet.http.HttpServletRequest;
 
+import org.junit.Ignore;
 import org.junit.Before;
 import org.junit.Test;
 import org.springframework.web.servlet.ModelAndView;
