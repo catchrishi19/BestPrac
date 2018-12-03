@@ -29,7 +29,7 @@ public class WhenDisplayingTheHomePage {
 
         ModelAndView homeView = controller.home();
 
-        assertThat(homeView.getViewName(), is("hom"));
+        assertThat(homeView.getViewName(), is("home"));
 
     }
 
@@ -43,7 +43,7 @@ public class WhenDisplayingTheHomePage {
 
         ModelAndView homeView = controller.index();
 
-        assertThat(homeView.getViewName(), is("hom"));
+        assertThat(homeView.getViewName(), is("home"));
 
     }
 
