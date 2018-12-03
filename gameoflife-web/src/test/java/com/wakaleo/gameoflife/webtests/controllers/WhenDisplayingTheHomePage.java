@@ -23,13 +23,13 @@ public class WhenDisplayingTheHomePage {
     @Ignore
     @Test
 
-    //public void theHomeUrlShouldDisplayTheHomePage() {
+    public void theHomeUrlShouldDisplayTheHomePage() {
 
         HomePageController controller = new HomePageController();
 
         ModelAndView homeView = controller.home();
 
-        assertThat(homeView.getViewName(), is("home"));
+        assertThat(homeView.getViewName(), is("hom"));
 
     }
 
@@ -37,13 +37,13 @@ public class WhenDisplayingTheHomePage {
 
     @Test
 
-    //public void theIndexUrlShouldDisplayTheHomePage() {
+    public void theIndexUrlShouldDisplayTheHomePage() {
 
         HomePageController controller = new HomePageController();
 
         ModelAndView homeView = controller.index();
 
-        assertThat(homeView.getViewName(), is("home"));
+        assertThat(homeView.getViewName(), is("hom"));
 
     }
 
