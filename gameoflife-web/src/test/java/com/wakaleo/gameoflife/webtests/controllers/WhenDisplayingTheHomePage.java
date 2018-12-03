@@ -20,7 +20,7 @@ public class WhenDisplayingTheHomePage {
 
 
 
-    //@Ignore
+    @Ignore
     @Test
 
     public void theHomeUrlShouldDisplayTheHomePage() {
@@ -29,7 +29,7 @@ public class WhenDisplayingTheHomePage {
 
         ModelAndView homeView = controller.home();
 
-        assertThat(homeView.getViewName(), is("hom"));
+        assertThat(homeView.getViewName(), is("home"));
 
     }
 
