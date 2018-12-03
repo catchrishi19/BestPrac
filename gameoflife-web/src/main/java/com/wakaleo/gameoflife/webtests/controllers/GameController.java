@@ -20,7 +20,7 @@ import com.wakaleo.gameoflife.domain.Universe;
  */
 @Controller
 @RequestMapping("/game")
-//public class GameController {
+public class GameController {
 	// For generating random thread sleep times
     private Random randomGenerator = new Random();
 
@@ -29,8 +29,8 @@ import com.wakaleo.gameoflife.domain.Universe;
     public ModelAndView newGame() {
         ModelAndView mav = new ModelAndView("game/edit");
         Universe universe = new Universe();
-        mav.addObject("universe", universe);
-        thinkABit(250); // Pause for random time
+        //mav.addObject("universe", universe);
+        //thinkABit(250); // Pause for random time
         return mav;
     }
 
