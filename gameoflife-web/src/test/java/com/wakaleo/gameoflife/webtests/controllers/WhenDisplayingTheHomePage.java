@@ -1,6 +1,6 @@
 package com.wakaleo.gameoflife.webtests.controllers;
 
-
+import org.junit.Ignore;
 
 import org.junit.Test;
 
