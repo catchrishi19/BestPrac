@@ -20,8 +20,9 @@ public class WhenDisplayingTheHomePage {
 
 
 
-    //@Test
-@Ignore
+    @Ignore
+    @Test
+
     public void theHomeUrlShouldDisplayTheHomePage() {
 
         HomePageController controller = new HomePageController();
