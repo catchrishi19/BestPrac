@@ -34,7 +34,7 @@ public class WhenDisplayingTheHomePage {
     }
 
 
-
+@Ignore
     @Test
 
     public void theIndexUrlShouldDisplayTheHomePage() {
