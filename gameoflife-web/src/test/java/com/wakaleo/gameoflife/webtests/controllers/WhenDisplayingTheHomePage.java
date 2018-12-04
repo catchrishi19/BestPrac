@@ -20,7 +20,7 @@ public class WhenDisplayingTheHomePage {
 
 
 
-   // @Ignore
+   @Ignore
     @Test
 
     public void theHomeUrlShouldDisplayTheHomePage() {
@@ -34,7 +34,7 @@ public class WhenDisplayingTheHomePage {
     }
 
 
-//@Ignore
+@Ignore
     @Test
 
     public void theIndexUrlShouldDisplayTheHomePage() {
