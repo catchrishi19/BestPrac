@@ -29,15 +29,14 @@ public class WhenCreatingANewGame {
         ModelAndView homeView = controller.newGame();
         //assertThat(homeView.getModel().get("universe"), is(not(nullValue())));
     }
-
+    
     @Test
     public void whenTheUserCreatesTheFirstGenerationAnEmptyUniverseShouldBeAddedToTheSession() {
         HttpServletRequest request = mock(HttpServletRequest.class);
         ModelAndView homeView = controller.firstGeneration(5, 5, request);
         assertThat(homeView.getModel().get("universe"), is(not(nullValue())));
     }
-
-    //@Ignore
+    
     @Test
     public void whenTheUserCreatesTheFirstGenerationTheUniverseDimensionsShouldBeAddedToTheSession() {
         HttpServletRequest request = mock(HttpServletRequest.class);
