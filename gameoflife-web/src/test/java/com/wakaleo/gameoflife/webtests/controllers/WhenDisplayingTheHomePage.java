@@ -20,8 +20,7 @@ public class WhenDisplayingTheHomePage {
 
 
 
-   @Ignore
-    @Test
+      @Test
 
     public void theHomeUrlShouldDisplayTheHomePage() {
 
