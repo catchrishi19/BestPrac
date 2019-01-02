@@ -13,7 +13,7 @@ import static org.mockito.Mockito.mock;
 
 public class WhenSpawningANewGeneration {
 
-   @Ignore
+ 
     @Test
     public void whenGeneratingTheNextGenerationAnUpdatedUniverseShouldBeProduced() {
         HttpServletRequest request = mock(HttpServletRequest.class);
@@ -25,7 +25,6 @@ public class WhenSpawningANewGeneration {
         assertThat(nextView.getModel().get("universe"), is(not(nullValue())));
     }
 
-    @Ignore
     @Test
     public void theIndexUrlShouldDisplayTheHomePage() {
         HomePageController controller = new HomePageController();
