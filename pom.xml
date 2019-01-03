@@ -125,9 +125,8 @@
                     <encoding>UTF-8</encoding>
                     <skipTests>false</skipTests>
                     <runOrder>alphabetical</runOrder>
-                    <includes>
-                       <IntegrationTests.java>
-                    </includes>
+                    <includes>IntegrationTests.java</includes>
+                    
                     <excludes>
                         ....
                     </excludes>
