@@ -117,7 +117,7 @@
                     <skipTests>false</skipTests>
                     <runOrder>alphabetical</runOrder>
                     <includes>
-                        ....<There are integration tests>
+                        ....
                     </includes>
                     <excludes>
                         ....
