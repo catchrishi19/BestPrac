@@ -84,65 +84,14 @@
             
             
    
-        <plugin>
-            <groupId>org.jacoco</groupId>
-            <artifactId>jacoco-maven-plugin</artifactId>
-            <version>${jacoco.version}</version>
-            <executions>
-                <execution>
-                    <id>prepare-unit-test-agent</id>
-                    <configuration>
-                    </configuration>
-                    <goals>
-                        <goal>prepare-agent</goal>
-                    </goals>
-                </execution>
-                <execution>
-                    <id>jacoco-site</id>
-                    <phase>verify</phase>
-                    <goals>
-                        <goal>report</goal>
-                    </goals>
-                </execution>
-                <execution>
-                    <id>prepare-it-test-agent</id>
-                    <configuration>
-                        <propertyName>jacoco.agent.argLine</propertyName>
-                        <destFile>${sonar.jacoco.itReportPath}</destFile>
-                        <append>true</append>
-                    </configuration>
-                    <goals>
-                        <goal>prepare-agent</goal>
-                    </goals>
-                </execution>
-            </executions>
-        </plugin>
-        <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-failsafe-plugin</artifactId>
-            <version>2.12.4</version>
-            <configuration>
-                <argLine>${jacoco.agent.argLine}</argLine>
-            </configuration>
-            <executions>
-                <execution>
-                    <goals>
-                        <goal>integration-test</goal>
-                    </goals>
-                </execution>
-            </executions>
-        </plugin>
-       
+              
             
             
             
             
             
             
-            
-                        
-             <!--           
-                        <plugin>
+                               <plugin>
 <groupId>org.jacoco</groupId>
 <artifactId>jacoco-maven-plugin</artifactId>
 <configuration>
@@ -177,7 +126,7 @@
                     <skipTests>false</skipTests>
                     <runOrder>alphabetical</runOrder>
                     <includes>
-                        ....
+                       <IntegrationTests.java>
                     </includes>
                     <excludes>
                         ....
@@ -196,8 +145,7 @@
                         
                         
                         
-                        -->
-                        
+                                         
                         
             <!-- CODE COVERAGE -->
             <plugin>
