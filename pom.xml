@@ -111,7 +111,7 @@
                 <version>2.19.1</version>
                 <configuration>
                     <systemPropertyVariables>
-                        <jacoco-agent.destfile>${project.build.directory}/coverage-reports/jacoco-it.exec</jacoco-agent.destfile>
+                        <jacoco-agent.destFile>${project.build.directory}/coverage-reports/jacoco-it.exec</jacoco-agent.destFile>
                     </systemPropertyVariables>
                     <encoding>UTF-8</encoding>
                     <skipTests>false</skipTests>
